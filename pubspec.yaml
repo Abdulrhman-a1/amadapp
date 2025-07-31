@@ -1,0 +1,75 @@
+name: amadapp
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.6
+
+  flutter_screenutil: ^5.9.3
+
+  flutter_bloc: ^9.1.1
+
+  flutter_localization: ^0.3.3
+  animate_do: ^4.2.0
+  
+  flutter_localizations:
+    sdk: flutter
+    
+  intl: ^0.20.2
+  lottie: ^3.3.1
+  fluttertoast: ^8.2.12
+  record: ^6.0.0
+  permission_handler: ^12.0.1
+  path_provider: ^2.1.5
+  get_it: ^8.0.3
+  dio: ^5.8.0+1
+  pretty_dio_logger: ^1.4.0
+  file_picker: ^10.2.0
+  image_picker: ^1.1.2
+  speech_to_text: ^7.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/lottie/
+
+  fonts:
+    - family: ElMessiri
+      fonts:
+        - asset: assets/fonts/arabic/ElMessiri-VariableFont_wght.ttf
+
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/arabic/IBMPlexSansArabic-Regular.ttf
+        - asset: assets/fonts/arabic/IBMPlexSansArabic-Thin.ttf
+        - asset: assets/fonts/arabic/IBMPlexSansArabic-Light.ttf
+        - asset: assets/fonts/arabic/IBMPlexSansArabic-Bold.ttf
+
+    - family: Share
+      fonts:
+        - asset: assets/fonts/english/Share-Regular.ttf
+
+
+
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  fullscreen: true
+  background_image: assets/images/splash.png
