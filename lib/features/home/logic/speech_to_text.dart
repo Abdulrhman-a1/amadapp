@@ -1,5 +1,6 @@
 import 'dart:async';
-import 'package:flutter/foundation.dart';
+import 'dart:developer';
+import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 
@@ -17,11 +18,15 @@ class SpeechController extends ChangeNotifier {
 
   Future<void> initializeSpeech() async {
     if (_initialized) return;
-    _initialized = await _speech.initialize();
+    _initialized = await _speech.initialize(
+      onError: (error) => log("Speech Error: ${error.errorMsg}"),
+      onStatus: (status) => log("Speech Status: $status"),
+    );
   }
 
   void startListening() {
     if (!_initialized) return;
+
     _recognizedText = '';
     _recordDuration = Duration.zero;
     _speech.listen(
@@ -30,10 +35,12 @@ class SpeechController extends ChangeNotifier {
       onResult: _onSpeechResult,
     );
     _isListening = true;
+
     _timer = Timer.periodic(const Duration(seconds: 1), (_) {
       _recordDuration += const Duration(seconds: 1);
       notifyListeners();
     });
+
     notifyListeners();
   }
 

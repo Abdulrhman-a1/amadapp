@@ -50,10 +50,16 @@
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
 		<key>NSMicrophoneUsageDescription</key>
-<string>We need access to the microphone for recording audio</string>
+		<string>يحتاج التطبيق إلى الوصول للميكروفون لتسجيل الصوت</string>
 		<key>NSPhotoLibraryUsageDescription</key>
 		<string>يحتاج التطبيق إلى الوصول لمكتبة الصور لاختيار الصور</string>
 		<key>NSCameraUsageDescription</key>
 		<string>يحتاج التطبيق إلى الوصول للكاميرا لالتقاط الصور</string>
+		<key>NSMicrophoneUsageDescription</key>
+<string>يحتاج التطبيق إلى الوصول للميكروفون لتسجيل الصوت</string>
+
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>يحتاج التطبيق إلى الوصول للتعرف على الكلام لتحويل الصوت إلى نص</string>
+
 	</dict>
 </plist>

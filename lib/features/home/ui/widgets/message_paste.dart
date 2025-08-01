@@ -75,7 +75,7 @@ class MessagePasteState extends State<MessagePaste> {
   void showMaxLengthMessage() {
     showToastMessage(
       context,
-      'لا يمكنك إرسال أكثر من 100 حرف',
+      'لا يمكنك إرسال أكثر من 300 حرف',
       "assets/images/question.png",
       isError: true,
     );

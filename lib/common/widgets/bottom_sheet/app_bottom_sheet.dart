@@ -6,6 +6,7 @@ void appBottomSheet(BuildContext context, Widget child) {
   showModalBottomSheet(
     context: context,
     isScrollControlled: true,
+
     builder: (BuildContext context) {
       return AnimatedContainer(
         duration: const Duration(milliseconds: 300),
