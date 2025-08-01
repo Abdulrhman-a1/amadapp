@@ -1,8 +1,8 @@
 import 'package:amadapp/common/theming/app_colors.dart';
 import 'package:amadapp/common/widgets/bottom_sheet/app_bottom_sheet.dart';
 import 'package:amadapp/common/widgets/custom_shapes/icon_and_text.dart';
-import 'package:amadapp/features/home/ui/widgets/message_paste.dart';
-import 'package:amadapp/features/home/ui/widgets/upload_area.dart';
+import 'package:amadapp/features/chat/ui/widgets/message_paste.dart';
+import 'package:amadapp/common/widgets/custom_shapes/upload_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
