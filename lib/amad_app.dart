@@ -23,6 +23,7 @@ class AmadApp extends StatelessWidget {
           theme: ThemeData(scaffoldBackgroundColor: AppColors.primaryColor),
           supportedLocales: [Locale('ar'), Locale('en')],
           //introduce localiztion to app widgets, icons, and material
+          //
           localizationsDelegates: [
             GlobalCupertinoLocalizations.delegate,
             GlobalMaterialLocalizations.delegate,
